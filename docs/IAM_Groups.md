@@ -50,17 +50,22 @@ Objective was: Created an IAM group and attach policies using AWS CLI.
 1. Create an IAM group:  
    ```sh
    aws iam create-group --group-name Developers
+
 2.Attach a policy to the group:
  ```sh
    aws iam attach-group-policy --group-name Developers --policy-arn arn:aws:iam::aws:policy/AmazonEC2FullAccess
 
+
 3. Add an existing IAM user to the group:
  ```sh
    aws iam add-user-to-group --user-name developer_user --group-name Developers
+
+
 4. Verify the group and users:
 ```sh
    aws iam get-group --group-name Developers
  
+
 **Example IAM Policy for a Developer Group**
      {
     "Version": "2012-10-17",
