@@ -1,4 +1,4 @@
-# AWS IAM Groups  //here i gave read_only_accesss //see the statement..
+# AWS IAM Groups  //here i gave all_accesss(*) //see the statement..
 
 ## What is an IAM Group?  
 An IAM Group is a collection of IAM users that share the same set of permissions. Instead of assigning policies to individual users, you can attach policies to a group, making access management more efficient.  
